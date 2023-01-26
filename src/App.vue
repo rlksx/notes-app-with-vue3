@@ -1,22 +1,22 @@
 <template>
   <div class="container mx-auto space-y-8 lg:px-32 md:px-32 px-20">
     <!-- header -->
-    <HeaderNotes />
+    <Header />
 
     <!-- Main -->
-    <MainNotes />
+    <Notebook />
   </div>
 </template>
 
 <script>
-import HeaderNotes from "./components/HeaderNotes.vue";
-import MainNotes from "./components/MainNotes.vue";
+import Header from "./components/Header.vue";
+import Notebook from "./components/Notebook.vue";
 
 export default {
   name: "App",
   components: {
-    HeaderNotes,
-    MainNotes,
+    Header,
+    Notebook,
   },
 };
 </script>
