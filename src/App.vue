@@ -1,6 +1,6 @@
 <template>
   <!-- NoteModel -->
-  <NoteModel v-if="this.modelOverlay" @overlay="closeModel" />
+  <NoteModel v-show="this.modelOverlay" @overlay="closeModel" />
 
   <div class="container mx-auto space-y-8 lg:px-32 md:px-32 px-20">
     <!-- header -->

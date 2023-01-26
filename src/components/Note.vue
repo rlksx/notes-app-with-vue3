@@ -6,7 +6,7 @@
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt
       est.
     </p>
-    <div class="flex justify-between">
+    <div class="flex justify-between items-baseline">
       <p class="">01/08/23</p>
       <button
         class="bg-beige-200 rounded-full p-1.5 text-beige-900"
