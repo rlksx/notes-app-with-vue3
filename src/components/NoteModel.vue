@@ -11,7 +11,7 @@
           cols="40"
           rows="6"
         ></textarea>
-        <button class="absolute m-3 text-beige-900">
+        <button @click="closeModel()" class="absolute m-3 text-beige-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -37,3 +37,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    closeModel() {
+      this.$emit("overlay");
+    },
+  },
+};
+</script>

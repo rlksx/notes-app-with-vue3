@@ -1,10 +1,10 @@
 <template>
   <!-- NoteModel -->
-  <NoteModel v-if="this.modelOverlay"/>
+  <NoteModel v-if="this.modelOverlay" @overlay="closeModel" />
 
   <div class="container mx-auto space-y-8 lg:px-32 md:px-32 px-20">
     <!-- header -->
-    <HeaderPage @close="closeModel" />
+    <HeaderPage @overlay="showModel" />
 
     <!-- Main -->
     <Notebook />
@@ -31,10 +31,15 @@ export default {
     NoteModel,
   },
 
+  props: {},
+
   methods: {
-    closeModel() {
-      console.log("oiin");
+    showModel() {
       this.modelOverlay = true;
+    },
+
+    closeModel() {
+      this.modelOverlay = false;
     },
   },
 };

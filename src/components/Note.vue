@@ -8,7 +8,9 @@
     </p>
     <div class="flex justify-between">
       <p class="">01/08/23</p>
-      <button class="bg-beige-200 rounded-full p-1.5 text-beige-900">
+      <button
+        class="bg-beige-200 rounded-full p-1.5 text-beige-900"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
