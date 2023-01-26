@@ -4,10 +4,16 @@
   >
     <div class="-translate-y-16 flex flex-col">
       <textarea
-      class="rounded-t-3xl bg-beige-200 text-beige-900 outline-none py-5 px-6"
-       name="note" id="note" cols="45" rows="8">
-      </textarea>
-      <button class="bg-beige-900 text-beige-200 rounded-b-3xl p-1">
+        class="rounded-t-3xl bg-beige-200 text-beige-900 outline-none px-6 py-4 shadow-md text-lg"
+        name="note"
+        id="note"
+        cols="40"
+        rows="6"
+      ></textarea>
+      <button
+        style="border-top-width: 3px"
+        class="bg-beige-900 text-beige-200 rounded-b-3xl l p-1 border-beige-900 hover:bg-beige-200 hover:text-beige-900 transform duration-200 ease-in-out"
+      >
         Add Note
       </button>
     </div>
