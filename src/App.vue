@@ -1,6 +1,6 @@
 <template>
   <!-- NoteModel -->
-  <!-- <NoteModel /> -->
+  <NoteModel v-if="this.modelOverlay"/>
 
   <div class="container mx-auto space-y-8 lg:px-32 md:px-32 px-20">
     <!-- header -->
@@ -18,6 +18,13 @@ import NoteModel from "./components/NoteModel.vue";
 
 export default {
   name: "App",
+
+  data() {
+    return {
+      modelOverlay: false,
+    };
+  },
+
   components: {
     HeaderPage,
     Notebook,
@@ -27,6 +34,7 @@ export default {
   methods: {
     closeModel() {
       console.log("oiin");
+      this.modelOverlay = true;
     },
   },
 };
