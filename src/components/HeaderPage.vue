@@ -5,7 +5,7 @@
   >
     <h1>Notes</h1>
     <button
-      @click="showModel()"
+      @click="$emit('overlay')"
       class="border-4 p-1 border-beige-900 rounded-full"
     >
       <svg
@@ -25,13 +25,3 @@
     </button>
   </header>
 </template>
-
-<script>
-export default {
-  methods: {
-    showModel() {
-      this.$emit("overlay");
-    },
-  },
-};
-</script>
