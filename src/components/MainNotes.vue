@@ -1,7 +1,45 @@
 <template>
-    <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente laudantium temporibus, itaque, quidem beatae tempora placeat enim voluptatibus nam recusandae vitae et, nisi voluptates. Necessitatibus, itaque! Animi, pariatur eos!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas soluta qui vitae? Cum laboriosam ducimus voluptatum asperiores nostrum, voluptatem, repellendus placeat vel nihil dolorum nemo earum ullam tempora. Dolore, maiores! <br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam deleniti in recusandae dolores totam maiores molestias sit dicta ex dolore labore tenetur suscipit quasi, nostrum iste perspiciatis, dignissimos doloremque accusantium.
-    </main>
+  <main class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-8 gap-6">
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+
+    <div
+      class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex"
+    >
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt est.</p>
+      <p></p>
+    </div>
+  </main>
 </template>

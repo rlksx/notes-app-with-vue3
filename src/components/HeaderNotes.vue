@@ -1,10 +1,12 @@
 <template>
   <header
     style="border-bottom-width: 3px"
-    class="pt-12 pb-8 text-6xl flex items-center justify-around text-beige-900 border-beige-900"
+    class="pt-12 pb-4 text-6xl flex items-center justify-between text-beige-900 border-beige-900"
   >
     <h1>Notes</h1>
-    <button class="border-4 border-beige-900 rounded-full">
+    <button
+      class="border-4 p-1 border-beige-900 rounded-full"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
