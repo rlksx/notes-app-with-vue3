@@ -4,7 +4,7 @@
     class="pt-12 pb-4 text-6xl flex items-center justify-between text-beige-900 border-beige-900"
   >
     <h1>Notes</h1>
-    <button @click="closeNoteModel()"
+    <button @click="closeModel()"
      class="border-4 p-1 border-beige-900 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,10 +27,8 @@
 <script>
 export default {
   methods: {
-    closeNoteModel() {
-      this.$emit("closeNoteModal");
-
-      console.log('close')
+    closeModel() {
+      this.$emit("close");
     },
   },
 };

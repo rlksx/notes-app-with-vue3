@@ -3,9 +3,8 @@
   <!-- <NoteModel /> -->
 
   <div class="container mx-auto space-y-8 lg:px-32 md:px-32 px-20">
-
     <!-- header -->
-    <HeaderPage />
+    <HeaderPage @close="closeModel" />
 
     <!-- Main -->
     <Notebook />
@@ -24,6 +23,11 @@ export default {
     Notebook,
     NoteModel,
   },
+
+  methods: {
+    closeModel() {
+      console.log("oiin");
+    },
+  },
 };
 </script>
-<style></style>
