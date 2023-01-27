@@ -5,20 +5,20 @@
     <div class="-translate-y-16 flex flex-col">
       <div class="flex items-start justify-end">
         <textarea
-          class="rounded-t-3xl bg-beige-200 text-beige-900 outline-none px-6 py-4 shadow-md text-lg"
+          class="rounded-t-3xl bg-beige-200 dark:text-stone-900 text-beige-900 outline-none px-6 py-4 shadow-md text-lg"
           name="note"
           id="note"
           cols="40"
           rows="6"
         ></textarea>
-        <button @click="$emit('overlay')" class="absolute m-3 text-beige-900">
+        <button @click="$emit('overlay')" class="absolute m-3 dark:text-stone-900 text-beige-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="2"
             stroke="currentColor"
-            class="w-5 h-5"
+            class="w-5 h-5 dark:text-stone-900"
           >
             <path
               stroke-linecap="round"
@@ -30,7 +30,7 @@
       </div>
       <button
         style="border-top-width: 3px"
-        class="bg-beige-900 text-beige-200 rounded-b-3xl l p-1 border-beige-900 hover:bg-beige-200 hover:text-beige-900 transform duration-200 ease-in-out"
+        class="bg-beige-900 dark:bg-stone-900 text-beige-200 rounded-b-3xl l p-1 dark:border-stone-900 border-beige-900 hover:bg-beige-200 hover:text-beige-900 transform duration-200 ease-in-out"
       >
         Add Note
       </button>

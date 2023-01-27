@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-64 bg-beige-900 rounded-3xl px-5 py-4 flex flex-col justify-between text-beige-200"
+    class="h-64 bg-beige-900 dark:bg-beige-200 rounded-3xl px-5 py-4 flex flex-col justify-between dark:text-stone-900 text-beige-200"
   >
     <p class="lg:text-lg">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt
@@ -8,14 +8,16 @@
     </p>
     <div class="flex justify-between items-baseline">
       <p class="">01/08/23</p>
-      <button class="bg-beige-200 rounded-full p-1.5 text-beige-900">
+      <button
+        class="bg-beige-200 dark:bg-stone-900 rounded-full p-1.5 text-beige-900"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-5 h-5"
+          class="w-5 h-5 dark:text-beige-200 p-0.5 dark:hover:text-beige-900"
         >
           <path
             stroke-linecap="round"

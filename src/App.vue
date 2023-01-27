@@ -21,4 +21,3 @@ const closeModel = () => (modelOverlay.value = false);
     <Notebook />
   </div>
 </template>
-
