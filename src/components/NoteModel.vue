@@ -1,3 +1,10 @@
+<script setup>
+import { ref } from "vue";
+
+const newNote = ref("");
+
+</script>
+
 <template>
   <div
     class="w-full h-full absolute z-10 bg-black bg-opacity-40 flex flex-col items-center justify-center"
@@ -5,13 +12,17 @@
     <div class="-translate-y-16 flex flex-col">
       <div class="flex items-start justify-end">
         <textarea
+          v-model="newNote"
           class="rounded-t-3xl bg-beige-200 dark:text-stone-900 text-beige-900 outline-none px-6 py-4 shadow-md text-lg"
           name="note"
           id="note"
           cols="40"
           rows="6"
         ></textarea>
-        <button @click="$emit('overlay')" class="absolute m-3 dark:text-stone-900 text-beige-900">
+        <button
+          @click="$emit('overlay')"
+          class="absolute m-3 dark:text-stone-900 text-beige-900"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,4 +47,5 @@
       </button>
     </div>
   </div>
+
 </template>
