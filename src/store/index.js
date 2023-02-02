@@ -33,7 +33,7 @@ export default createStore({
       const response = axios
         .post("http://localhost:3000/notebook", data)
         .then((response) => {
-          commit("storeNote", response.data)
+          commit("storeNote", response.data);
         });
     },
   },
