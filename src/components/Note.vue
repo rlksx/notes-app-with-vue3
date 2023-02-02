@@ -4,10 +4,13 @@
   >
     <p class="lg:text-lg break-words overflow-hidden">
       <textarea
-        v-model="note.text"
+        v-model="text"
         cols="30"
         rows="10"
-        class="h-full w-full resize-none outline-none bg-beige-200"
+        class="h-full w-full resize-none outline-none bg-beige-200 whitespace-nowrap"
+        @keyup.prevent.enter="updateNote"
+        @focusin="checkModalIn"
+        @focusout="checkModalout"
       ></textarea>
     </p>
     <div class="flex justify-between items-baseline">
@@ -42,4 +45,19 @@ const store = useStore();
 const props = defineProps({
   note: Object,
 });
+
+const text = ref(props.note.text);
+const updateNote = () => {
+  const payload = {
+    id: props.note.id,
+    data: {
+      text: text.value,
+    },
+  };
+  store.dispatch("putNote", payload);
+};
+
+const checkModalIn = () => {
+
+}
 </script>

@@ -9,7 +9,7 @@ const addNote = () => {
   if (!newNote.value) return;
 
   store
-    .dispatch("addNote", {
+    .dispatch("pushNote", {
       text: newNote.value,
       date: new Date().toLocaleDateString(),
     })

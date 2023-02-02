@@ -1,14 +1,23 @@
 {
   "notebook": [
     {
-      "text": "teste de input",
-      "date": "02/02/2023",
+      "text": "aadsa\n\n",
       "id": 1
     },
     {
       "text": "outro teste de input",
       "date": "02/02/2023",
       "id": 2
+    },
+    {
+      "text": "push note text",
+      "date": "02/02/2023",
+      "id": 3
+    },
+    {
+      "text": "sim",
+      "date": "02/02/2023",
+      "id": 4
     }
   ]
 }

@@ -22,14 +22,20 @@ export default createStore({
   },
   actions: {
     getNotebook({ commit }) {
-      return new Promise((resolve) => {
+      return new Promise(() => {
         return axios
           .get("http://localhost:3000/notebook")
           .then((response) => commit("storeNotebook", response.data));
       });
     },
 
-    addNote({ commit }, data) {
+    putNote({ commit }, { id, data }) {
+      return axios
+        .put(`http://localhost:3000/notebook/${id}`, data)
+        .then((response) => commit("storeNote", response.data));
+    },
+
+    pushNote({ commit }, data) {
       const response = axios
         .post("http://localhost:3000/notebook", data)
         .then((response) => {
