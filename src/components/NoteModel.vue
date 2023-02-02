@@ -4,7 +4,7 @@ import { useStore } from "vuex";
 
 const emit = defineEmits(["overlay"]);
 const store = useStore();
-let newNote = ref("");
+const newNote = ref("");
 const addNote = () => {
   if (!newNote.value) return;
 
@@ -14,8 +14,8 @@ const addNote = () => {
       date: new Date().toLocaleDateString(),
     })
     .finally(() => {
-      newNote = "";
       emit("overlay");
+      newNote.value = "";
     });
 };
 </script>
