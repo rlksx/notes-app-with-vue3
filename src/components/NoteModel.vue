@@ -1,8 +1,23 @@
 <script setup>
-import { ref } from "vue";
+import { defineEmits, ref } from "vue";
+import { useStore } from "vuex";
 
-const newNote = ref("");
+const emit = defineEmits(["overlay"]);
+const store = useStore();
+let newNote = ref("");
+const addNote = () => {
+  if (!newNote.value) return;
 
+  store
+    .dispatch("addNote", {
+      text: newNote.value,
+      date: new Date().toLocaleDateString(),
+    })
+    .finally(() => {
+      newNote = "";
+      emit("overlay");
+    });
+};
 </script>
 
 <template>
@@ -40,6 +55,7 @@ const newNote = ref("");
         </button>
       </div>
       <button
+        @click="addNote"
         style="border-top-width: 3px"
         class="bg-beige-900 dark:bg-stone-900 text-beige-200 rounded-b-3xl l p-1 dark:border-stone-900 border-beige-900 hover:bg-beige-200 hover:text-beige-900 transform duration-200 ease-in-out"
       >
@@ -47,5 +63,4 @@ const newNote = ref("");
       </button>
     </div>
   </div>
-
 </template>
