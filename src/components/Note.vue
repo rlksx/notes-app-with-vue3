@@ -2,12 +2,11 @@
   <div
     class="h-64 bg-beige-900 dark:bg-beige-200 rounded-3xl px-5 py-4 flex flex-col justify-between dark:text-stone-900 text-beige-200"
   >
-    <p class="lg:text-lg">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi sunt
-      est.
+    <p class="lg:text-lg break-words">
+      {{ note.text }}
     </p>
     <div class="flex justify-between items-baseline">
-      <p class="">01/08/23</p>
+      <p>{{ note.date }}</p>
       <button
         class="bg-beige-200 dark:bg-stone-900 rounded-full p-1.5 text-beige-900"
       >
@@ -29,3 +28,13 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import { useStore } from "vuex";
+
+const store = useStore();
+const props = defineProps({
+  note: Object,
+});
+</script>

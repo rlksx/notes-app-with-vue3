@@ -10,7 +10,7 @@ const store = useStore();
 const openModel = () => (modelOverlay.value = true);
 const closeModel = () => (modelOverlay.value = false);
 
-store.dispatch("getNotebook").then((response) => console.log(response.data));
+store.dispatch("getNotebook")
 </script>
 
 <template>

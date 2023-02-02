@@ -1,14 +1,9 @@
 {
   "notebook": [
     {
-      "text": "Almoçar com os parça",
+      "text": "Fazer almoço e descongelar a carne",
       "date": "02/02/2023",
       "id": 1
-    },
-    {
-      "text": "Estudar vuex com a mãe de amigo",
-      "date": "02/02/2023",
-      "id": 2
     }
   ]
 }
