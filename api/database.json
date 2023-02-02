@@ -1,44 +1,14 @@
 {
   "notebook": [
     {
-      "id": 1,
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima omnis voluptas architecto tempore. Eaque sed incidunt molestias, tempore, vero iure magnam quaerat quis distinctio ad inventore, repellendus dolor ducimus nobis.",
-      "date": "12/02/2023"
-    },
-    {
-      "id": 2,
-      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima omnis voluptas architecto tempore. Eaque sed incidunt molestias, tempore, vero iure magnam quaerat quis distinctio ad inventore, repellendus dolor ducimus nobisinima omnis voluptas architecto tempore. Eaque sed incidunt molestias, tempore, vero iure magnam quaerat quis distinctio ad inventore, repellendus dolo.",
-      "date": "13/02/2023"
-    },
-    {
-      "text": "Estudar vuex",
+      "text": "Almoçar com os parça",
       "date": "02/02/2023",
-      "id": 3
+      "id": 1
     },
     {
-      "text": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa",
+      "text": "Estudar vuex com a mãe de amigo",
       "date": "02/02/2023",
-      "id": 4
-    },
-    {
-      "text": "oaiodsjfanf",
-      "date": "02/02/2023",
-      "id": 5
-    },
-    {
-      "text": "oaiodsjfanfwfedsadwr",
-      "date": "02/02/2023",
-      "id": 6
-    },
-    {
-      "text": "asdfhdklafhkdasjf",
-      "date": "02/02/2023",
-      "id": 7
-    },
-    {
-      "text": "jfdaklsfjdh",
-      "date": "02/02/2023",
-      "id": 8
+      "id": 2
     }
   ]
 }
